@@ -1,0 +1,947 @@
+/ * ------------------------------------------------ -----------------------------
+
+	- Portafolio esg -
+
+Hoja de estilo de pantalla
+
+autor: themepunch
+correo electrónico: info@themepunch.com
+sitio web: http://www.themepunch.com
+-------------------------------------------------- --------------------------- * /
+
+
+/ ***************************************
+	- AJUSTES BÁSICOS PARA PORTFOLIO-
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+.esg-starring {line-height: 25px; display: inline-block}
+.esg-starring .star-rating {float: none; }
+
+.esg-starring .star-rating {
+color: # FFC321! importante;
+}
+
+.esg-starring .star-rating, .esg-starring-page .star-rating {
+flotar derecho;
+desbordamiento: oculto;
+posición: relativa;
+altura: 1em;
+altura de línea: 1em;
+tamaño de fuente: 1em;
+ancho: 5.4em;
+familia de fuentes: estrella;
+}
+
+.esg-starring .star-rating: antes, .esg-starring-page .star-rating: antes {
+contenido: "\ 73 \ 73 \ 73 \ 73 \ 73";
+color: # E0DADF;
+flotador izquierdo;
+arriba: 0;
+izquierda: 0;
+posición: absoluta;
+}
+
+.esg-starring star-rating span,
+.esg-starring .star-rating span {
+									desbordamiento: oculto;
+									flotador izquierdo;
+									arriba: 0;
+									izquierda: 0;
+									posición: absoluta;
+									acolchado superior: 1.5em;
+									}
+
+.esg-starring .star-rating span: antes,
+.esg-starring .star-rating span: antes de {
+contenido: "\ 53 \ 53 \ 53 \ 53 \ 53";
+arriba: 0;
+posición: absoluta;
+izquierda: 0;
+}
+
+.esg-starring .star-rating {
+color: # FFC321! importante;
+}
+
+.lazyloadcover {posición: absoluta; arriba: 0px; izquierda: 0px; índice z: 10; ancho: 100%; alto: 100%; }
+
+.esg-lazyblur {
+	repetición de fondo: no repetición;
+  	filtro: desenfoque (25px);
+  	-webkit-filter: desenfoque (25px);
+  	-moz-filter: desenfoque (25px);
+  	background-size: cover; background-position: center center; 
+  	ancho: 100%;
+  	altura: 100%;
+  	arriba: 0;
+  	izquierda: 0;
+  	desbordamiento: oculto; 	
+}
+
+.esg-media-poster {ancho: 100%; alto: 100%; posición: absoluta; superior: 0px; izquierda: 0px; background-size: cover; posición de fondo: centro centro; índice z: 10; opacidad: 0;}
+.esg-video-active .esg-media-poster {índice-z: 0}
+.esg-vimeo-frame {fondo: negro}
+
+/ * 2.2 * /
+.esg-grid .no-filter-message {
+    / * no es necesario editar a continuación * /
+    posición: absoluta;
+    abajo: 0;
+    izquierda: 0;
+    ancho: 100%;
+    alineación de texto: centro;
+    eventos de puntero: ninguno;
+    visibilidad: oculta;
+    opacidad: 0;
+    transición: todos los 0.2s facilidad;
+ 
+}
+ 
+/ * desvanece el mensaje dentro y fuera * /
+.esg-grid.show-message .no-filter-message {
+ 
+    duración de la transición: 1 s;
+    visibilidad: visible;
+    opacidad: 1;
+ 
+}
+
+/ * 2.1.6 * /
+.esg-hover-image {display: none}
+.esg-media-poster .esg-hover-image {display: block; ancho: heredar; altura: heredar; background-size: heredar; posición de fondo: heredar; visibilidad: oculta; opacidad: 0}
+
+.esg-starring .star-rating, .esg-starring-page .star-rating {
+altura de línea: 1em;
+tamaño de fuente: 1em;
+familia de fuentes: estrella;
+}
+
+.esg-grid {ancho: 100%; ancho máximo: 100%; familia de fuentes: 'Open Sans', sans-serif; -webkit-backface-visibilidad: oculto; visibilidad de la cara posterior: oculta; -webkit-transform: translateZ (0px); transformar: translateZ (0px)}
+@ -moz-document url-prefix () {
+  .esg-grid {transform: none! important}
+}
+
+.esg-grid .mainul,
+.esg-grid .mainul> li {estilo de lista: ninguno;
+	margen: 0;
+	acolchado: 0;
+	estilo de transformación: plano! importante;}
+
+
+
+.esg-grid * {-webkit-font-smoothing: antialiased; font-smoothing: antialiased;}
+.esg-container ul,
+.esg-container li {
+	estilo de lista: ninguno;
+	margen: 0;
+	acolchado: 0;
+	transform-style: flat! important;
+
+}
+
+.esg-overflowtrick {posición: relativa; ancho: 100%; altura: auto;
+						desbordamiento: oculto;
+						relleno: 0px; tamaño de caja: caja de borde;
+						-moz-box-sizing: border-box;
+						-webkit-box-sizing: border-box;
+
+						índice z: 1;
+						/ * fondo: # 00ff00; * /
+					}
+
+.esg-container {
+		posición: relativa;
+		ancho: 100%;
+		altura: auto;
+
+}
+
+.esg-contenedor> ul,
+.esg-overflowtrick> ul {
+	ancho: 100%;
+	ancho máximo: 100%;
+	altura: 0px;
+/ * mostrar: ninguno; * /
+	posición: relativa;
+	desbordamiento: visible;
+/ * fondo: # ff0000;
+	relleno: 30px;
+	margen: -30px; * /
+}
+
+.esg-grid li {
+		 borde: 0px sólido transparente;
+         contorno: 0px sólido transparente;
+         visibilidad: oculta;
+         pantalla: ninguna;
+	/ * -moz-backface-visibilidad: oculto; * /
+
+}
+
+.esg-grid a {borde: ninguno; decoración de texto: ninguna}
+.esg-grid a: desplazarse,
+.esg-grid a: focus {decoración de texto: ninguna; borde: ninguno; }
+.esg-clear {clear: ambos; altura: 5px! importante; fondo: ninguno! importante; }
+.esg-clear-sin-height,
+.eg-clearfix {claro: ambos; altura: 0px! importante; fondo: ninguno! importante; }
+
+
+.esg-divide-5 {ancho: 100%; alto: 5px}
+.esg-divide-15 {ancho: 100%; alto: 15px}
+.esg-divide-20 {ancho: 100%; alto: 20px}
+.esg-divide-22 {ancho: 100%; alto: 22px}
+.esg-divide-30 {ancho: 100%; alto: 30px}
+
+.esg-click-to-play-video {cursor: pointer}
+
+.esg-entry-media iframe {-kit-web-transform-style: flat;
+								-webkit-transform: translateZ (1000px);
+								borde: 0;
+							}
+
+
+/ *****************************
+	- LOS ARTÍCULOS DE ESG -
+******************************* /
+
+.esg-container .tp-esg-item {posición: absoluta; arriba: 0px; izquierda: 0px; }
+
+
+.esg-container .tp-esg-item {tamaño-de-caja: borde-cuadro; -moz-tamaño-de-caja: borde-caja; -webkit-box-sizing: borde-caja;}
+.esg-container .tp-esg-item .blackoverlay {ancho: 100%; alto: 100%; posición: absoluta; fondo: # 000; arriba: 0px; izquierda: 0px;}
+
+
+
+.tp-esg-item {índice Z: 5}
+.tp-esg-item.itemonotherpage {índice Z: 0; pantalla: ninguna;}
+
+
+/ *****************************
+	- POSICIONES DE ELEMENTOS ESG -
+******************************* /
+
+.esg-entry-cover {tamaño de la caja: caja de borde; tamaño de caja de moz: caja de borde; tamaño de caja de kit web: caja de borde;
+							ancho: 100%; alto: 100%; posición: absoluta; arriba: 0px; izquierda: 0px; desbordamiento: oculto;
+							borde: 0px sólido transparente;
+							contorno: 0px sólido transparente;
+						}
+
+.eec {pantalla: bloque; ancho: auto; altura: auto; posición: absoluta! importante; tamaño de fuente: 20px; alineación de texto: centro; }
+
+/ * CONTENEDORES * /
+.esg-tc {arriba: 0px; izquierda: 0px; ancho: 100%;}
+.esg-lc {arriba: 0px; izquierda: 0px; altura: 100%;}
+.esg-cc {arriba: 0px; izquierda: 0px; ancho: 100%; alineación vertical: medio;}
+.esg-rc {arriba: 0px; derecha: 0px; altura: 100%;}
+.esg-bc {parte inferior: 0px; izquierda: 0px; ancho: 100%;}
+
+
+/ * CONTENEDORES SUPERIORES * /
+
+.esg-tc .ess-tb-cell {alineación de texto: centro; alineación vertical: superior; }
+
+
+/ * CONTENEDORES CENTRALES * /
+.esg-lc .ess-tb-cell {alineación de texto: izquierda; alineación vertical: medio;}
+.esg-cc .ess-tb-cell {}
+.esg-rc .ess-tb-cell {alineación de texto: derecha; alineación vertical: medio;}
+
+/ * CONTENEDORES DERECHOS * /
+.esg-blc .ess-tb-cell {alineación de texto: izquierda; vertical-align: bottom;}
+.esg-bc .ess-tb-cell {alineación de texto: centro; vertical-align: bottom;}
+.esg-brc .ess-tb-cell {alineación de texto: derecha; vertical-align: bottom;}
+
+.esg-bc .leftalign {alineación de texto: izquierda;}
+
+
+/ *****************************
+	- MEDIOS ESG -
+******************************* /
+
+.esg-entry-media {posición: relativa; borde: 0px transparente sólido; contorno: 0px transparente sólido; desbordamiento: oculto;
+											}
+
+.esg-entry-media {ancho: 100%;}
+.esg-entry-media img {ancho: 100%; altura: auto; ancho máximo: ninguno! importante; min-width: none! important}
+
+.esg-layout-masonry .esg-entry-media img {
+	altura de línea: 0px;
+	alineación vertical: parte inferior;
+	pantalla: bloque en línea;
+
+}
+
+
+/*.esg-layout-even .esg-entry-media,
+.esg-layout-even .esg-entry-media img {altura: 100%;} * /
+
+
+.esg-layout-even .esg-entry-media img {display: none}
+
+
+.esg-media-cover-wrapper {posición: relativa; ancho: 100%;}
+.esg-layout-even .esg-media-cover-wrapper {altura: 100%;}
+
+.esg-entry-media-wrapper {índice-z: 0; }
+.esg-entry-media-wrapper .esg-video-frame {background: # 000;}
+
+
+/ *********************************
+	- CONTENEDOR TAPA ESG -
+********************************* /
+
+
+.esg-entry-cover .esg-overlay {posición: absoluta; arriba: 0px; izquierda: 0px; ancho: 100%; altura: 100%; borde: 0px sólido transparente;
+         												contorno: 0px sólido transparente;}
+/ *****************************
+	- PARTE ESG CONTNER -
+******************************* /
+
+
+.esg-layout-even .esg-entry-content {display: none; }
+
+
+.esg-entry-content {
+														tamaño de caja: caja de borde;
+														-moz-box-sizing: border-box;
+														-webkit-box-sizing: border-box;
+														-webkit-backface-visibilidad: oculto;
+
+													}
+
+
+
+/ *****************************
+	- PIELES DE NAVEGACIÓN -
+******************************* /
+
+.botones de navegacion,
+.esg-paginación,
+.esg-filtros {posición: relativa; índice z: 50; -webkit-backface-visibilidad: oculto;}
+
+.esg-sortbutton-order.eg-icon-down-open.tp-asc {text-align: center}
+.esg-sortbutton-order .tp-desc {alineación de texto: centro}
+
+/ *****************************
+	- BOTONES DE FILTRO -
+	- BOTONES DE NAVEGACION -
+******************************* /
+
+.esg-singlefilters .esg-filter-comprobado {pantalla: ninguno; -webkit-backface-visibilidad: oculto;}
+
+.esg-filter-wrapper {pantalla: bloque-en-línea; }
+.esg-sortbutton-wrapper {display: inline-block; }
+.esg-cartbutton-wrapper {display: inline-block}
+
+/ * ESTILO ABAJO PARA REJILLA ESENCIAL * /
+.esg-filter-wrapper.dropdownstyle {min-width: 100px; cursor: pointer; posición: relativa; índice z: 1500; -webkit-backface-visibilidad: oculto; -webkit-transform: translateZ (1px); transform: translateZ (1px)}
+.esg-filter-wrapper.dropdownstyle .esg-filterbutton {display: block;}
+.esg-dropdown-wrapper {pantalla: ninguna; posición: absoluta; fondo: #fff; relleno: 20px; superior: 100%; -webkit-backface-visibilidad: oculto;
+-webkit-transform: translateZ (10px);}
+
+.esg-selected-filterbutton {color: # 999;
+														margen derecho: 5px;
+														cursor: puntero;
+														relleno: 0px 15px 0px 10px;
+														altura de línea: 20px;
+														tamaño de fuente: 12px;
+														peso de fuente: 600;
+														familia de fuentes: "Open Sans", sans-serif;
+														pantalla: bloque en línea;
+														fondo: rgba (0, 0, 0, 0);
+														margen inferior: 5px;
+													}
+.esg-selected-filterbutton: hover {color: # 444;}
+
+.esg-selected-filterbutton .eg-icon-down-open {display: inline-block;
+														alineación vertical: medio;
+														ancho: 29px;
+														altura de línea: 20px;
+														tamaño de fuente: 9px;
+														peso de fuente: 700;
+														color: # 999;
+														cursor: puntero;
+														fondo: rgba (0, 0, 0, 0);}
+
+
+
+/ ** MISMOS AJUSTES PARA TODAS LAS PIEL ** /
+.esg-sortbutton-order.tp-desc {-moz-transform: scaleY (-1);
+												        -o-transformar: scaleY (-1);
+												        -webkit-transform: scaleY (-1);
+												        transformar: scaleY (-1);
+												        filtro: FlipV;
+												        -ms-filter: "FlipV";}
+
+.esg-sorting-select {cursor: puntero; posición: absoluta; arriba: 0px; izquierda: 0px; ancho: 100%; alto: 100%; -ms-filter: "progid: DXImageTransform.Microsoft.Alpha (Opacidad = 0)";
+													    filtro: alfa (opacidad = 0);
+													    -moz-opacidad: 0.0;
+													    -khtml-opacidad: 0.0;
+													    opacidad: 0,0;
+													    -webkit-apariencia: botón-menulista;
+											}
+
+.esg-filtros.esg-navbutton-solo-left {posición: absoluta; izquierda: 0px; arriba: 50%; índice z: 800}
+.esg-filters.esg-navbutton-solo-right {posición: absoluta; derecha: 0px; arriba: 50%; índice z: 800;}
+
+.esg-navigationbutton.esg-right,
+.esg-navigationbutton.esg-left {margin-left: 0px! important; margen derecho: 0px! importante; -webkit-transform-style: plano; -webkit-transform: translateZ (5000px);}
+
+
+/ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+	- CONTENEDORES LET / RIGHT WIDGET AREA -
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * /
+
+.eg-leftright-container {float: left; ancho: 310px; margen derecho: 20px; tamaño de la caja: caja de borde; tamaño de caja de moz: caja de borde; tamaño de caja de kit web: caja de borde; posición: relativa;}
+.eg-leftright-container.dark {fondo: # 1e1e1e}
+.eg-leftright-container .pagination {posición: absoluta; inferior: 0px;}
+
+.eg-leftright-container .esg-filters {relleno: 30px; tamaño de caja: caja-borde; -tamaño-caja-moz: caja-borde; -kit-web-tamaño-caja: caja-borde;}
+.eg-leftright-container .esg-filterbutton {display: block; margen: 0px 0px 5px 0px}
+.eg-leftright-container .esg-filter-wrapper {pantalla: bloque; margen derecho: 0px;}
+
+
+/ **********************************
+	- CONTENEDOR OBJETIVO AJAX -
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+.eg-ajaxtarget-container {posición: relativa; ancho: 100%; alto: automático;}
+
+/ *****************************
+	- FORMULARIOS DE CARGADOR -
+******************************* /
+
+.tp-esg-item .add_to_cart_button.loading: before {content: "";
+											posición: absoluta;
+											arriba: 0;
+											derecha: 0;
+											izquierda: 0;
+											abajo: 0;
+											background: url (../ images / ajax-loader.gif) center no-repeat rgba (255, 255, 255, 0.65);
+										 }
+
+.esg-loader {
+				arriba: 50%; izquierda: 50%;
+				índice z: 10000;
+				posición: absoluta;
+
+
+			}
+
+.infinityscollavailable.esg-loader {posición: relativa; arriba: auto; izquierda: 50%; margin-top: 25px! important; margin-bottom: 25px! important;}
+/*.infinityscollavailable.esg-loader.spinner0 {bottom: 20px; }
+.infinityscollavailable.esg-loader.spinner1 {bottom: 20px; }
+.infinityscollavailable.esg-loader.spinner2 {bottom: 20px; }
+.infinityscollavailable.esg-loader.spinner3 {bottom: 18px; }
+.infinityscollavailable.esg-loader.spinner4 {parte inferior: 22px; }
+.infinityscollavailable.esg-loader.spinner0 {bottom: 22px; } * /
+
+.esg-loader.spinner0 {
+  ancho: 40px;
+  altura: 40px;
+  background: url (../ images / loader.gif) centro central sin repetición;
+  color de fondo: #fff;
+  caja de sombra: 0px 0px 20px 0px rgba (0,0,0,0.15);
+  -webkit-box-shadow: 0px 0px 20px 0px rgba (0,0,0,0.15);
+
+  margen izquierdo: -20px;
+  -webkit-animation: esg-rotateplane 1.2s infinita facilidad de entrada y salida;
+  animación: esg-rotateplane 1.2s entrada y salida infinitas;
+  radio del borde: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+
+
+.esg-loader.spinner1 {
+  ancho: 40px;
+  altura: 40px;
+  color de fondo: #fff;
+  caja de sombra: 0px 0px 20px 0px rgba (0,0,0,0.15);
+  -webkit-box-shadow: 0px 0px 20px 0px rgba (0,0,0,0.15);
+
+  margen izquierdo: -20px;
+  -webkit-animation: esg-rotateplane 1.2s infinita facilidad de entrada y salida;
+  animación: esg-rotateplane 1.2s entrada y salida infinitas;
+  radio del borde: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+
+
+
+.esg-loader.spinner5 {background: url (../ images / loader.gif) sin repetición 10px 10px;
+							color de fondo: #fff;
+							margen: -22px -22px;
+							ancho: 44px; alto: 44px;
+							radio del borde: 3px;
+							-moz-border-radius: 3px;
+							-webkit-border-radius: 3px;
+						}
+
+
+@ -webkit-keyframes esg-rotateplane {
+  0% {-webkit-transform: perspectiva (120 px)}
+  50% {-webkit-transform: perspectiva (120px) rotateY (180deg)}
+  100% {-webkit-transform: perspectiva (120px) rotateY (180deg) rotateX (180deg)}
+}
+
+@keyframes esg-rotateplane {
+  0% {
+    transformar: perspectiva (120px) rotateX (0deg) rotateY (0deg);
+    -webkit-transform: perspectiva (120px) rotateX (0deg) rotateY (0deg)
+  } 50% {
+    transformar: perspectiva (120px) rotateX (-180.1deg) rotateY (0deg);
+    -webkit-transform: perspectiva (120px) rotateX (-180.1deg) rotateY (0deg)
+  } 100% {
+    transformar: perspectiva (120px) rotateX (-180deg) rotateY (-179.9deg);
+    -webkit-transform: perspectiva (120px) rotateX (-180deg) rotateY (-179.9deg);
+  }
+}
+
+
+.esg-loader.spinner2 {
+  ancho: 40px;
+  altura: 40px;
+  margen izquierdo: -20px;
+  color de fondo: # ff0000;
+   caja de sombra: 0px 0px 20px 0px rgba (0,0,0,0.15);
+  -webkit-box-shadow: 0px 0px 20px 0px rgba (0,0,0,0.15);
+  radio de borde: 100%;
+  -webkit-animation: esg-scaleout 1.0s infinita facilidad de entrada y salida;
+  animación: esg-scaleout 1.0s infinita facilidad de entrada y salida;
+}
+
+@ -webkit-keyframes esg-scaleout {
+  0% {-webkit-transform: scale (0.0)}
+  100% {
+    -webkit-transform: escala (1.0);
+    opacidad: 0;
+  }
+}
+
+@keyframes esg-scaleout {
+  0% {
+    transformar: escala (0.0);
+    -webkit-transform: escala (0.0);
+  } 100% {
+    transformar: escala (1.0);
+    -webkit-transform: escala (1.0);
+    opacidad: 0;
+  }
+}
+
+
+
+
+.esg-loader.spinner3 {
+  margen: -9px 0px 0px -35px;
+  ancho: 70px;
+  alineación de texto: centro;
+}
+
+.eg-search-wrapper .esg-loader.spinner3 {margin-top: -30px! important}
+.simple-light .eg-search-wrapper .esg-loader.spinner3,
+.simple-dark .eg-search-wrapper .esg-loader.spinner3 {margin-top: -25px! important}
+
+.text-light .eg-search-wrapper .esg-loader.spinner3,
+.text-dark .eg-search-wrapper .esg-loader.spinner3 {margin-top: -22px! important}
+
+.esg-loader.spinner3 .bounce1,
+.esg-loader.spinner3 .bounce2,
+.esg-loader.spinner3 .bounce3 {
+  ancho: 18px;
+  altura: 18px;
+  color de fondo: #fff;
+  caja de sombra: 0px 0px 20px 0px rgba (0,0,0,0.15);
+  -webkit-box-shadow: 0px 0px 20px 0px rgba (0,0,0,0.15);
+  radio de borde: 100%;
+  pantalla: bloque en línea;
+  -webkit-animation: esg-bouncedelay 1.4s infinita facilidad de entrada y salida;
+  animación: esg-bouncedelay 1.4s infinita facilidad de entrada y salida;
+  / * Evita que el primer fotograma parpadee cuando comienza la animación * /
+  -webkit-animation-fill-mode: ambos;
+  modo de relleno de animación: ambos;
+}
+
+.esg-loader.spinner3 .bounce1 {
+  -webkit-animation-delay: -0.32s;
+  retardo de animación: -0,32 s;
+}
+
+.esg-loader.spinner3 .bounce2 {
+  -webkit-animation-delay: -0.16s;
+  retardo de animación: -0,16 s;
+}
+
+@ -webkit-keyframes esg-bouncedelay {
+  0%, 80%, 100% {-webkit-transform: scale (0.0)}
+  40% {-webkit-transform: scale (1.0)}
+}
+
+@keyframes esg-bouncedelay {
+  0%, 80%, 100% {
+    transformar: escala (0.0);
+    -webkit-transform: escala (0.0);
+  } 40% {
+    transformar: escala (1.0);
+    -webkit-transform: escala (1.0);
+  }
+}
+
+
+
+
+.esg-loader.spinner4 {
+  margen: 0px 0px 0px -20px;
+  ancho: 40px;
+  altura: 40px;
+  alineación de texto: centro;
+  -webkit-animation: esg-rotate 2.0s infinite linear;
+  animación: esg-rotate 2.0s infinite linear;
+}
+
+.esg-loader.spinner4 .dot1,
+.esg-loader.spinner4 .dot2 {
+  ancho: 60%;
+  altura: 60%;
+  pantalla: bloque en línea;
+  posición: absoluta;
+  arriba: 0;
+  color de fondo: #fff;
+  radio de borde: 100%;
+  -webkit-animation: esg-bounce 2.0s infinita facilidad de entrada y salida;
+  animación: esg-bounce 2.0s infinita facilidad de entrada y salida;
+  caja de sombra: 0px 0px 20px 0px rgba (0,0,0,0.15);
+  -webkit-box-shadow: 0px 0px 20px 0px rgba (0,0,0,0.15);
+}
+
+.esg-loader.spinner4 .dot2 {
+  arriba: auto;
+  abajo: 0px;
+  -webkit-animation-delay: -1.0s;
+  retardo de animación: -1.0s;
+}
+
+@ -webkit-keyframes esg-rotate {100% {-webkit-transform: rotate (360deg)}}
+@keyframes esg-rotate {100% {transform: rotate (360deg); -webkit-transform: rotar (360 grados)}}
+
+@ -webkit-keyframes esg-bounce {
+  0%, 100% {-webkit-transform: scale (0.0)}
+  50% {-webkit-transform: scale (1.0)}
+}
+
+@keyframes esg-bounce {
+  0%, 100% {
+    transformar: escala (0.0);
+    -webkit-transform: escala (0.0);
+  } 50% {
+    transformar: escala (1.0);
+    -webkit-transform: escala (1.0);
+  }
+}
+
+
+
+/ ****************************
+* Iconos de fuente
+**************************** /
+
+[class ^ = "eg-icon -"]: antes, [class * = "eg-icon -"]: antes {
+	familia de fuentes: "eg-font";
+	estilo de fuente: normal;
+	font-weight: normal;
+	hablar: ninguno;
+
+	pantalla: bloque en línea;
+	decoración de texto: heredar;
+	ancho: 1em;
+	margen derecho: .2em;
+	alineación de texto: centro;
+	/ * opacidad: .8; * /
+
+	/ * Por seguridad: restablezca los estilos principales, que pueden romper los códigos de glifos * /
+	variante de fuente: normal;
+	transformación de texto: ninguna;
+
+	/ * arreglar la altura de los botones, para twitter bootstrap * /
+	altura de línea: 1em;
+
+	/ * Compensación del centro de animación: los márgenes deben ser simétricos * /
+	/ * eliminar si no es necesario * /
+	margen izquierdo: .2em;
+
+	/ * puede sentirse más cómodo con un tamaño mayor de los iconos * /
+	/ * tamaño de fuente: 120%; * /
+
+	/ * Descomentar para efecto 3D * /
+	/ * texto-sombra: 1px 1px 1px rgba (127, 127, 127, 0.3); * /
+}
+
+[class ^ = "fa-icon -"]: antes, [class * = "fa-icon -"]: antes {
+	familia de fuentes: FontAwesome;
+	estilo de fuente: normal;
+	font-weight: normal;
+	hablar: ninguno;
+
+	pantalla: bloque en línea;
+	decoración de texto: heredar;
+	ancho: 1em;
+	margen derecho: .2em;
+	alineación de texto: centro;
+	/ * opacidad: .8; * /
+
+	/ * Por seguridad: restablezca los estilos principales, que pueden romper los códigos de glifos * /
+	variante de fuente: normal;
+	transformación de texto: ninguna;
+
+	/ * arreglar la altura de los botones, para twitter bootstrap * /
+	altura de línea: 1em;
+
+	/ * Compensación del centro de animación: los márgenes deben ser simétricos * /
+	/ * eliminar si no es necesario * /
+	margen izquierdo: .2em;
+}
+
+[class ^ = "pe-7s -"]: antes, [class * = "pe-7s -"]: antes {
+	familia de fuentes: 'Pe-icon-7-stroke';
+    pantalla: bloque en línea;
+    estilo de fuente: normal;
+	font-weight: normal;
+	hablar: ninguno;
+
+	pantalla: bloque en línea;
+	decoración de texto: heredar;
+	ancho: 1em;
+	margen derecho: .2em;
+	alineación de texto: centro;
+	/ * opacidad: .8; * /
+
+	/ * Por seguridad: restablezca los estilos principales, que pueden romper los códigos de glifos * /
+	variante de fuente: normal;
+	transformación de texto: ninguna;
+
+	/ * arreglar la altura de los botones, para twitter bootstrap * /
+	altura de línea: 1em;
+
+	/ * Compensación del centro de animación: los márgenes deben ser simétricos * /
+	/ * eliminar si no es necesario * /
+	margen izquierdo: .2em;
+}
+
+
+/ * MODS DE ESTILO GENERAL AÑADIDOS EN 1.1.0 * /
+
+.esg-filter-wrapper .esg-filterbutton: último hijo,
+.esg-cartbutton a,
+.esg-selected-filterbutton {margin-right: 0! important; }
+.esg-singlefilters .esg-filter-comprobado {display: none! important}
+
+/ * # firstcontentcontainer {background: #fff! important; background-image: none! important} * /
+
+
+/ ****************************************
+	- ESTILO DE CONTENIDO CARGADO AJAX -
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+.eg-ajaxclicklistener {cursor: puntero}
+.eg-ajax-video-container {
+	posición: relativa;
+    fondo acolchado: 56,25%;
+    padding-top: 30px; altura: 0; desbordamiento: oculto;
+}
+
+.eg-ajax-video-container.widevideo {
+    fondo acolchado: 50%;
+}
+
+.eg-ajax-video-container iframe,
+objeto .eg-ajax-video-container,
+.eg-ajax-video-container embed {
+	posición: absoluta;
+    arriba: 0;
+    izquierda: 0;
+    ancho: 100%;
+    altura: 100%;
+}
+.forcenotvisible {visibilidad: oculta! importante}
+.forcenotdisplay {display: none! important}
+
+/ *****************************
+	- BUSCANDO FUNCIÓN -
+******************************* /
+input.eg-search-input [type = "text"],
+.eg-search-input {display: inline-block}
+.eg-búsqueda-enviar,
+.eg-search-clean {display: inline-block; ancho: auto; -moz-user-select: -moz-none; -khtml-user-select: ninguno; -webkit-user-select: none;}
+.eg-búsqueda-enviar,
+.eg-search-clean {cursor: puntero}
+
+
+.eg-search-wrapper {alineación-vertical: arriba; altura de línea: 40px;}
+input.eg-search-input [type = "text"] {font-family: "Open Sans", sans-serif; esquema: ninguno! importante; margen: 0px 0px 5px! importante; relleno: 8px 15px; alineación vertical: medio;}
+
+
+
+
+/ ****************************************
+	- ESTILO DE BOTÓN DE NAVEGACIÓN AJAX -
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+.eg-ajax-más cerca-envoltorio {pantalla: bloque; índice z: 51000; posición: relativa}
+.eg-ajax-navbt {cursor: puntero; pantalla: bloque en línea; margen derecho: 5px;}
+
+.eg-acp-inner.eg-acp-tr .eg-ajax-más cercano.eg-ajax-navbt,
+.eg-acp-inner.eg-acp-br .eg-ajax-close.eg-ajax-navbt {margen-derecho: 0px}
+
+
+.eg-ajax-más cercano-envoltorio.eg-acp-tl,
+.eg-ajax-close-wrapper.eg-acp-bl {alineación de texto: izquierda; }
+.eg-ajax-más cerca-envoltorio.eg-acp-tr,
+.eg-ajax-close-wrapper.eg-acp-br {alineación de texto: derecha; }
+.eg-ajax-close-wrapper.eg-acp-t,
+.eg-ajax-close-wrapper.eg-acp-b {alineación de texto: centro;}
+
+.eg-ajax-close-wrapper.eg-acp-t,
+.eg-ajax-más cerca-envoltorio.eg-acp-tr,
+.eg-ajax-Closer-wrapper.eg-acp-tl {margen-inferior: 5px;}
+.eg-ajax-close-wrapper.eg-acp-bl,
+.eg-ajax-más cerca-envoltorio.eg-acp-br,
+.eg-ajax-close-wrapper.eg-acp-b {margen-superior: 5px;}
+
+
+
+.eg-acp-inner {pantalla: bloque; posición: absoluta; índice z: 50; margen: 5px;}
+
+.eg-acp-inner.eg-acp-tr,
+.eg-acp-inner.eg-acp-tl,
+.eg-acp-inner.eg-acp-t {arriba: 0px; }
+
+.eg-acp-inner.eg-acp-br,
+.eg-acp-inner.eg-acp-bl,
+.eg-acp-inner.eg-acp-b {parte inferior: 0px; }
+
+.eg-acp-inner.eg-acp-tl,
+.eg-acp-inner.eg-acp-bl {izquierda: 0px;}
+
+.eg-acp-inner.eg-acp-tr,
+.eg-acp-inner.eg-acp-br {derecha: 0px; }
+
+.eg-acp-inner.eg-acp-t,
+.eg-acp-inner.eg-acp-b {izquierda: 50%; - webkit-transform: translateX (-50%); transform: translateX (-50%); - moz-transform: translateX (-50%) ;}
+
+
+.eg-ajax-navbt {altura de línea: 21px; fondo: # 000; fondo: rgba (0,0,0,0,75); color: #fff; border-radius: 2px; -moz-border-radius: 2px; -webkit-border-radius: 2px; transformación de texto: mayúsculas; relleno: 1px 1px 0px 0px; tamaño de fuente: 11px; peso de fuente: 400; }
+.eg-ajax-más cercano.eg-ajax-navbt {relleno: 1px 5px 1px 3px; alineación vertical: superior;}
+.eg-acp-light .eg-ajax-navbt {fondo: # e5e5e5; color: # 000;}
+.eg-ajax-más cercano.eg-ajax-navbt i {tamaño de fuente: 13px;}
+.eg-ajax-navbt i {tamaño de fuente: 16px;}
+
+.eg-ajax-close-wrapper.eg-acp-type1 {margen: 0;}
+
+.eg-acp-type1 .eg-ajax-navbt {border-radius: 0px; -moz-border-radius: 0px; -webkit-border-radius: 0px; relleno: 10px; margen: 0px;}
+.eg-acp-type1 .eg-ajax-navbt i {tamaño de fuente: 20px;}
+.eg-acp-type1 .eg-ajax-navbt {ancho: 40px; alto: 40px; alineación de texto: centro; alineación vertical: media! importante; altura de línea: 40px; relleno: 0px;}
+
+.eg-acp-type1 .eg-ajax-close.eg-ajax-navbt {vertical-align: top; tamaño de fuente: 24px; peso de fuente: 300; familia de fuentes: sans-serif; height: auto; line-height: 28px; padding: 8px 0px 4px;}
+
+
+
+span.eg-el-amount: before {content: "("}
+span.eg-el-amount: after {content: ")"}
+span.eg-el-amount {margin-left: 10px;}
+
+
+/ ***************************************
+	- 2.1.6 FUNCIÓN DE CONTENIDO DIVIDIDO -
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+.esg-split-content .esg-entry-media-wrapper, .esg-split-content .esg-entry-cover {ancho: 50%! importante}
+.esg-split-content .esg-media-cover-wrapper: after {content: ""; pantalla: mesa; Limpia los dos}
+.esg-split-right .esg-entry-media-wrapper, .esg-split-right .esg-entry-cover {float: right}
+.esg-split-left .esg-entry-media-wrapper, .esg-split-left .esg-entry-cover {float: left}
+.esg-split-content .esg-entry-media {altura: 100%! importante}
+.esg-split-content .esg-entry-cover {posición: relativa! importante}
+.esg-split-content .esg-entry-content {clear: both}
+
+/ *
+2.1.6
+Filtros de desenfoque y escala de grises
+* /
+.grayscale {-webkit-filter: escala de grises (100%); filtro: escala de grises (100%)}
+
+/ * 2.1.6.2 * /
+.esg-itm-anime: not (.esg-anime-blur) .esg-overflowtrick {overflow: visible! important}
+.esg-itm-anime .tp-esg-item {-webkit-mask-image: none! important}
+.esg-itm-anime .tp-esg-item: hover {z-index: 9999! important; transform: none! important}
+.esg-anime-blur .esg-entry-media {transform: scale (1.15, 1.15)! importante; transform-origin: center center! important}
+.esg-anime-item: before {
+	posición: absoluta;
+	arriba: 0;
+	izquierda: 0;
+	ancho: 100%;
+	altura: 100%;
+	contenido: "";
+}
+
+/ * 2.2 * /
+.eg-invisiblebutton {caja-sombra: ¡ninguna! importante; altura: heredar! importante; bloqueo de pantalla}
+.esg-lb-dummy {max-width: none! important; caja-sombra: ¡ninguna! importante; posición: absoluta; pantalla: ninguna}
+
+
+/ * diseño de contenido de la publicación * /
+@media pantalla y (ancho máximo: 736px) {
+	.eg-lightbox-post-content-inner> div {
+		ancho: 100%! importante;
+		flotador: ninguno! importante;
+	}
+	.eg-lightbox-post-content-inner .esg-post-Featured-img {
+		relleno: 30px 0! importante;
+	}
+	
+}
+
+.esgbox-stage .esgbox-slide> *: not (.esgbox-share) {margin: 0; relleno: 0}
+.esgbox-stage .esgbox-slide> .esgbox-loading {margin-top: -30px; margin-left: -30px}
+.esgbox-toolbar .esgbox-button {transición: fondo 0.2s facilidad de salida}
+.esgbox-toolbar .esgbox-button: foco,
+.esgbox-toolbar .esgbox-button: activo,
+.esgbox-toolbar .esgbox-button: visitado {background: rgba (30,30,30, .6)}
+.esgbox-toolbar .esgbox-button: hover {background: # 767676}
+
+.esgbox-navigation .esgbox-button: antes de {transición: fondo 0.2s facilidad de salida}
+.esgbox-navigation .esgbox-button: focus: before,
+.esgbox-navigation .esgbox-button: activo: antes,
+.esgbox-navigation .esgbox-button: visitado: antes,
+.esgbox-navigation .esgbox-button [deshabilitado]: hover: antes,
+.esgbox-toolbar .esgbox-button [deshabilitado]: hover {background: rgba (30,30,30, .6)}
+.esgbox-navigation .esgbox-button: hover: before {background: # 767676}
+
+.esgbox-hidearrows .esgbox-navigation .esgbox-button - arrow_left,
+.esgbox-hidearrows .esgbox-navigation .esgbox-button - arrow_right {display: none! important}
+
+.esgbox-single .esgbox-button - arrow_left,
+.esgbox-single .esgbox-button - arrow_right {display: none! important}
+
+.esgbox-slide - iframe de video {
+	ancho: 1280px;
+	altura: 720px;
+	ancho máximo: 100%;
+	altura máxima: 100%;
+}
+
+.esg-cuatro-por-tres .esgbox-slide - iframe de video {
+	ancho: 800px;
+	altura: 600px;
+}
+
+Botón .esgbox-container: desplazarse, 
+Botón .esgbox-container: foco {fondo: transparente}
+
+/ ** 
+FILTROS DE INSTAGRAM DE UNA 
+https://una.im/CSSgram/
+** /
+.aden {-webkit-filter: matiz-rotar (-20deg) contraste (.9) saturar (.85) brillo (1.2); filtro: matiz-rotar (-20deg) contraste (.9) saturar (.85) brillo (1.2)}. Aden :: after {background: -webkit-linear-gradient (izquierda, rgba (66,10,14, .2), transparente); background: linear-gradient (hacia la derecha, rgba (66,10 , 14, .2), transparente); mix-blend-mode: oscurecer} .perpetua :: after, .reyes :: after {mix-blend-mode: soft-light; opacity: .5} .inkwell {-webkit -filtro: sepia (.3) contraste (1.1) brillo (1.1) escala de grises (1); filtro: sepia (.3) contraste (1.1) brillo (1.1) escala de grises (1)}. perpetua :: después de {fondo: - webkit-linear-gradient (arriba, # 005b9a, # e6c13d); fondo: linear-gradient (hacia abajo, # 005b9a, # e6c13d)}. reyes {-webkit-filter: sepia (.22) brillo (1.1) contraste ( .85) saturar (.75); filtro: sepia (.22) brillo (1.1) contraste (.85) saturar (.75)}. Reyes :: after {background: #efcdad} .gingham {-webkit-filter:brillo (1.05) tono-rotate (-10deg); filtro: brillo (1.05) tono-rotate (-10deg)}. gingham :: after {background: -webkit-linear-gradient (izquierda, rgba (66,10,14 , .2), transparente); fondo: degradado-lineal (a la derecha, rgba (66,10,14, .2), transparente); mezcla-modo-mezcla: oscurecer} .toaster {-webkit-filter: contrast ( 1.5) brillo (.9); filtro: contraste (1.5) brillo (.9)}. Tostadora :: después de {fondo: -webkit-radial-gradient (círculo, # 804e0f, # 3b003b); fondo: radial-gradiente ( circle, # 804e0f, # 3b003b); mix-blend-mode: screen} .walden {-webkit-filter: brillo (1.1) tono-rotar (-10deg) sepia (.3) saturar (1.6); filtro: brillo ( 1.1) tono-rotate (-10deg) sepia (.3) saturate (1.6)}. Walden :: after {background: # 04c; mix-blend-mode: screen; opacity: .3} .hudson {-webkit-filter : brillo (1.2) contraste (.9) saturar (1.1); filtro: brillo (1.2) contraste (.9) saturar (1.1)}. hudson :: after {background:-webkit-radial-gradient (círculo, # a6b1ff 50%, # 342134); fondo: radial-gradient (círculo, # a6b1ff 50%, # 342134); mix-blend-mode: multiplicar; opacidad: .5} .earlybird {-webkit-filter: contraste (.9) sepia (.2); filtro: contraste (.9) sepia (.2)}. Earlybird :: after {background: -webkit-radial-gradient (circle, # d0ba8e 20 %, # 360309 85%, # 1d0210 100%); fondo: radial-gradient (círculo, # d0ba8e 20%, # 360309 85%, # 1d0210 100%); mix-blend-mode: overlay} .mayfair {-kit web -filtro: contraste (1.1) saturar (1.1); filtro: contraste (1.1) saturar (1.1)}. mayfair :: after {background: -webkit-radial-gradient (40% 40%, circle, rgba (255,255,255 ,. 8), rgba (255,200,200, .6), # 111 60%); fondo: gradiente radial (círculo al 40% 40%, rgba (255,255,255, .8), rgba (255,200,200, .6), # 111 60% ); mix-blend-mode: overlay; opacity: .4} .lofi {-webkit-filter: saturate (1.1) contrast (1.5); filter: saturate (1.1) contrast (1.5)}. lofi :: after {background :-webkit-radial-gradient (círculo, 70% transparente, # 222 150%); fondo: radial-gradient (círculo, 70% transparente, # 222 150%); modo de mezcla: multiplicar} ._ 1977 {-webkit -filtro: contraste (1.1) brillo (1.1) saturar (1.3); filtro: contraste (1.1) brillo (1.1) saturar (1.3)} ._ 1977: after {background: rgba (243,106,188, .3); mix-blend- modo: pantalla} .brooklyn {-webkit-filter: contraste (.9) brillo (1.1); filtro: contraste (.9) brillo (1.1)}. brooklyn :: after {background: -webkit-radial-gradient (círculo , rgba (168,223,193, .4) 70%, # c4b7c8); background: radial-gradient (circle, rgba (168,223,193, .4) 70%, # c4b7c8); mix-blend-mode: overlay} .xpro2 {-webkit -filtro: sepia (.3); filtro: sepia (.3)}. xpro2 :: after {background: -webkit-radial-gradient (circle, # e6e7e0 40%, rgba (43,42,161, .6) 110% ); fondo: radial-gradient (círculo, # e6e7e0 40%, rgba (43,42,161, .6) 110%); mix-blend-mode: color-burn}.nashville {-webkit-filter: sepia (.2) contraste (1.2) brillo (1.05) saturar (1.2); filtro: sepia (.2) contraste (1.2) brillo (1.05) saturar (1.2)}. nashville :: después {background: rgba (0,70,150, .4); mix-blend-mode: lighten} .nashville :: before {background: rgba (247,176,153, .56); mix-blend-mode: darken} .lark {-webkit -filtro: contraste (.9); filtro: contraste (.9)}. lark :: after {background: rgba (242,242,242, .8); mix-blend-mode: oscurecer} .lark :: before {background: # 22253f; mix-blend-mode: color-dodge} .moon {-webkit-filter: escala de grises (1) contraste (1.1) brillo (1.1); filtro: escala de grises (1) contraste (1.1) brillo (1.1)}. Luna :: before {background: # a0a0a0; mix-blend-mode: soft-light} .moon :: after {background: # 383838; mix-blend-mode: aclarar} .clarendon {-webkit-filter: contrast (1.2) saturar (1.35); filtro: contraste (1.2) saturar (1.35)}. clarendon: before {background: rgba (127,187,227, .2); mix-blend-mode: overlay}.sauce {-webkit-filter: escala de grises (.5) contraste (.95) brillo (.9); filtro: escala de grises (.5) contraste (.95) brillo (.9)}. sauce :: antes {color de fondo : radial-gradient (40%, circle, # d4a9af 55%, # 000 150%); mix-blend-mode: overlay} .willow :: after {background-color: # d8cdcb; mix-blend-mode: color} .rise {-webkit-filter: brillo (1.05) sepia (.2) contraste (.9) saturar (.9); filtro: brillo (1.05) sepia (.2) contraste (.9) saturar (.9)} .rise :: after {background: -webkit-radial-gradient (círculo, rgba (232,197,152, .8), transparente 90%); fondo: radial-gradient (círculo, rgba (232,197,152, .8), transparente 90%) ; mix-blend-mode: overlay; opacity: .6} .rise :: before {background: -webkit-radial-gradient (circle, rgba (236,205,169, .15) 55%, rgba (50,30,7 ,. 4)); fondo: gradiente radial (círculo, rgba (236,205,169, .15) 55%, rgba (50,30,7, .4)); modo de mezcla-mezcla: multiplicar} ._ 1977: después, ._ 1977 : antes, .aden: después ,.aden: antes, .brooklyn: después, .brooklyn: antes, .clarendon: después, .clarendon: antes, .earlybird: después, .earlybird: antes, .gingham: después, .gingham: antes, .hudson: después ,. hudson: antes, .inkwell: después, .inkwell: antes, .lark: después, .lark: antes, .lofi: después, .lofi: antes, .mayfair: después, .mayfair: antes, .moon: después ,. luna: antes, .nashville: después, .nashville: antes, .perpetua: después, .perpetua: antes, .reyes: después, .reyes: antes, .salida: después, .salida: antes, .dueño: después ,. slumber: before, .toaster: after, .toaster: before, .walden: after, .walden: before, .willow: after, .willow: before, .xpro2: after, .xpro2: before {content: ''; mostrar : block; height: 100%; width: 100%; top: 0; left: 0; position: absolute; pointer-events: none} ._ 1977, .aden, .brooklyn, .clarendon, .earlybird, .gingham ,. hudson, .inkwell, .lark, .lofi, .mayfair, .moon, .nashville, .perpetua, .reyes, .rise, .slumber, .toaster, .walden, .willow,.xpro2 {posición: relativa} ._ 1977 img, .aden img, .brooklyn img, .clarendon img, .earlybird img, .gingham img, .hudson img, .inkwell img, .lark img, .lofi img, .mayfair img, .moon img, .nashville img, .perpetua img, .reyes img, .rise img, .slumber img, .toaster img, .walden img, .willow img, .xpro2 img {ancho: 100%; índice z: 1 } ._ 1977: antes, .aden: antes, .brooklyn: antes, .clarendon: antes, .earlybird: antes, .gingham: antes, .hudson: antes, .inkwell: antes, .lark: antes, .lofi: antes , .mayfair: antes, .moon: antes, .nashville: antes, .perpetua: antes, .reyes: antes, .rise: antes, .slumber: before, .toaster: before, .walden: before, .willow: before , .xpro2: before {z-index: 2} ._ 1977: after, .aden: after, .brooklyn: after, .clarendon: after, .earlybird: after, .gingham: after, .hudson: after, .inkwell: después, .lark: después, .lofi: después, .mayfair: después, .moon: después, .nashville: después, .perpetua: después, .reyes: después, .rise: después,.slumber: after, .toaster: after, .walden: after, .willow: after, .xpro2: after {z-index: 3} .slumber {-webkit-filter: saturar (.66) brillo (1.05); filtrar : saturar (.66) brillo (1.05)}. slumber :: after {background: rgba (125,105,24, .5); mix-blend-mode: soft-light} .slumber :: before {background: rgba (69 , 41,12, .4); mix-blend-mode: aclarar}
+
+/ * Sin filtros y búsqueda en Streams, NextGen, ML * /
+.source_type_stream .esg-filter-wrapper,
+.source_type_nextgen .esg-filter-wrapper,
+.source_type_rml .esg-filter-wrapper {display: none! important; }
